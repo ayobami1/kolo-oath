@@ -1,0 +1,240 @@
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ # background: linear-gradient(-30deg, #282c34, #58515f);
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif/800px-Computer-screen-code-glitch-animation-gif-background-free.gif") no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+.signup-form{
+   background-image: url("kolo_aouth.png"); /* URL of the image */
+  background-size: 300px; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-color: #fff;
+  background-position: center;
+
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ # padding: 0px 0px 20px 20px;
+  padding: 20px;
+}
+.login-form {
+  background-image: url("kolo_aouth.png"); /* URL of the image */
+  background-size: 100px; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-color: #fff; /* Fallback background color */
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: top;
+  padding: 0px 10px 10px 20px;
+
+}
+/* CSS for SMS Verification Form */
+#verification-form {
+  background-color: #fff;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Changed from 'right' to 'center' */
+  padding: 20px; /* Removed extra semicolons */
+  text-align: center;
+}
+
+/* CSS for Email Verification Form for login */
+#email-verification-form-login{
+  background-color: #fff;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Changed from 'right' to 'center' */
+  padding: 20px; /* Removed extra semicolons */
+  text-align: center;
+}
+
+/* CSS for Email Verification Form for sign up */
+#email-verification-form-sign{
+  background-color: #fff;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Changed from 'right' to 'center' */
+  padding: 20px; /* Removed extra semicolons */
+  text-align: center;
+
+
+}
+.name {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+
+.signup-input {
+  width: 90%;
+  height: 40px;
+  border: solid 0.5px #ccc;
+  border-radius: 10px;
+  padding:0px 0px 0px 5px;
+   margin: 10px 0;
+}
+.login-input {
+  width: 90%;
+  height: 40px;
+  border: solid 0.5px #ccc;
+  border-radius: 10px;
+  padding:0px 0px 0px 5px;
+   margin: 5px 0;
+
+}
+
+button {
+  margin-top: 10px;
+  width: 50%;
+  height: 40px;
+  border: none;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  #margin:40 60;
+
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+
+/* These two button is for the login Form #login-button and #signUp-button  */
+#login-button {
+  text-align: center;
+  margin: 30px 50px; /* Specify units (e.g., px) for the margin */
+  background-color: black; /* Set the background color to black */
+  margin-left: 70px;
+}
+
+
+#signUp-button {
+  margin: -20px 50px; /* Specify units (e.g., px) for the margin */
+  background-color: #007acc; /* Set the background color to blue */
+   margin-left: 70px;
+}
+
+
+
+
+#register-button-login {
+  background-color: #007acc; /*blue color*/
+  color: white;
+  cursor: pointer;
+  margin:10px 150px;
+
+}
+
+
+#register {
+  background-color: black;
+  cursor: pointer;
+  margin: 0px 150px
+
+}
+
+
+
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* If needed to prevent card content overflow */
+ # width: 800px; /* Adjust the width as needed */
+ # height: 400px; /* Adjust the height as needed */
+}
+
+container {
+  display: none;
+  overflow: hidden;
+}
+
+
+.card-title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.verification-form .form-group {
+  text-align: center;
+}
+
+
+###.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the content */
+  justify-content: center; /* Vertically center the content */
+  height: 100vh; /* Set the section height to the viewport height for full-screen effect */
+}
+
+
+.login-section h1 {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 80px; /* Add space below the heading */
+  margin-right: 20px;
+  font-family: sans-serif; /* Use a modern font */
+  color: #007acc;
+
+}
+
+.signup-form h2 {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 10px; /* Add space below the heading */
+  margin-right: 20px;
+  font-family: "Your-Font-Name", sans-serif; /* Use a modern font */
+  color: #007acc; /* Set the text color to a modern color */
+}

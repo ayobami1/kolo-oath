@@ -1,0 +1,77 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+</head>
+<body>
+  <main id="main">
+    <div id="container" style="display: none;">
+      <video autoplay playsinline id="videoElement"></video>
+      <canvas id="canvas" width="400" height="300"></canvas>
+    </div>
+   <form id="login-form" class="login-form">
+
+      <div class="login-section">
+        <h1>Login</h1>
+        <div class="form-group">
+<!--          <label for="username">Username:</label>-->
+           <label>Username/email</label>
+          <input type="text" class="login-input" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+<!--          <label for="password">Password:</label>-->
+           <label>Password:</label>
+          <input type="password" class="login-input" id="password" name="password" required>
+        </div>
+<!--        <div class="form-group">-->
+<!--            -->
+<!--           <label>Phone Number <h7>E.g (+44 70310711777)</h7></label>-->
+<!--          <input type="tel" id="phoneNumber" class="login-input" name="phoneNumber" required>-->
+<!--        </div>-->
+        <div class="form-group">
+          <button type="button" value="login" id="login-button">Login</button>
+        </div>
+          <div class="form-group">
+          <button type="button" value="signup" id="signUp-button">SignUp Here</button>
+        </div>
+      </div>
+    </form>
+
+
+      <!--This Snippet is use ot Display the sms Verification Form !-->
+      <div id="verification-container" style="display: none;">
+      <form id="verification-form" class="verification-form">
+        <div class="form-group">
+          <label for="otp">Enter OTP:</label>
+            <p> <label><i>(Opt has been sent your Registered Number)</i></label></p>
+          <input type="text" id="otp" class="login-input" placeholder="4-digits pin" name="otp" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="verify-button">Verify</button>
+        </div>
+      </form>
+    </div>
+
+
+      <!--This Snippet is use ot Display the email Verification Form !-->
+      <div id="email-verification-container" style="display: none;">
+      <form id="email-verification-form-login" class="email-verification-form">
+        <div class="form-group">
+          <label for="email-otp">Enter OTP:</label>
+            <p><label><i>(Please Verify Your Email)</i></label></p>
+          <input type="text" id="email-otp" class="login-input" placeholder="4-digits pin" name="otp" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="email-verify-login-button">Verify</button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  <script src="{{ url_for('static', filename='login_script.js') }}"></script>
+</body>
+</html>

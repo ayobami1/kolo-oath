@@ -1,0 +1,130 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>Document</title>-->
+<!--  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">-->
+<!--  <script-->
+<!--      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <main id="main">-->
+<!--    <form>-->
+<!--      <div class="name">-->
+<!--        <p>First Name</p>-->
+<!--        <input class="iname" type="text" placeholder="Input your first name" id = "fname">-->
+<!--      </div>-->
+<!--      <div class="name">-->
+<!--        <p>Last Name</p>-->
+<!--        <input class="iname" type="text" placeholder="Input your last name" id ="lname">-->
+<!--      </div>-->
+<!--      <div class="name">-->
+<!--        <p>Email</p>-->
+<!--        <input class="iname" id = "email" type="email" placeholder="Input your email" >-->
+<!--      </div>-->
+<!--      <div class="picture">-->
+<!--        <button id ="register">Sign up</button>-->
+<!--      </div>-->
+<!--    </form>-->
+<!--  </main>-->
+<!--  <script src="{{ url_for('static',filename='script.js') }}"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+</head>
+<body>
+  <main id="main">
+    <form id="signup-form" class="signup-form">
+        <h2>Registration Form</h2>
+      <div class="name">
+        <lapbel>First Name</lapbel>
+        <input class="signup-input" type="text" placeholder="Input your first name" id="fname" required>
+      </div>
+      <div class="name">
+        <label>Last Name</label>
+        <input class="signup-input" type="text" placeholder="Input your last name" id="lname" required>
+      </div>
+      <div class="name">
+        <label>Email</label>
+        <input class="signup-input" id="email" type="email" placeholder="Input your email" required>
+      </div>
+
+      <div class="name">
+        <label>Password</label>
+        <input class="signup-input" id="password" type="password" placeholder="Input your email" required>
+      </div>
+      <div class="name">
+        <label>Phone Number <h7>E.g (+44 70310711777)</h7></label>
+
+        <input class="signup-input" id="phoneNumber" type="tel" placeholder="Input your phone number and country code" required>
+      </div>
+      <div class="button-group">
+        <button tyepe='button'  id="register">Sign up</button>
+      </div>
+      <div class="button-group">
+          <button type="button" value="login" id="register-button-login">Login here</button>
+      </div>
+    </form>
+
+
+    <div id="verification-container" style="display: none;">
+      <form id="verification-form" class="verification-form">
+        <div class="form-group">
+          <label for="otp">Enter OTP:</label>
+            <p> <label><i>(Please Verify Your  Number)</i></label></p>
+          <input type="text" id="otp" class="signup-input" placeholder="4-digits pin" name="otp" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="verify-signUp-button">Verify</button>
+        </div>
+      </form>
+    </div>
+
+  <!--This Snippet is use ot Display the email Verification Form !-->
+      <div id="email-verification-container" style="display: none;">
+      <form id="email-verification-form-sign" class="email-verification-form">
+        <div class="form-group">
+          <label for="email-otp">Enter OTP:</label>
+            <p><label><i>(Please Verify Your Email)</i></label></p>
+          <input type="text" id="email-otp" class="login-input" placeholder="4-digits pin" name="otp" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="email-verify-signUp-button">Verify</button>
+        </div>
+      </form>
+    </div>
+
+
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script>
+    document.querySelector("form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Get form input values
+      const firstName = document.getElementById("fname").value;
+      const lastName = document.getElementById("lname").value;
+      const email = document.getElementById("email").value;
+
+      // Perform client-side validation
+      if (!firstName || !lastName || !email) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Proceed with facial registration logic here
+      // You can use the socket.emit function to send the captured image to the server
+
+    });
+  </script>
+</body>
+</html>
