@@ -1,8 +1,8 @@
-# Kol-auth-server
-A 3rd party app for facial verifcation
+
 
 ![Kolo Authentication Logo](https://i.imgur.com/rTc41Iu.png)
-# Kolo Authentication OTP
+# Kol-auth-server
+A 3rd party app for facial verifcation
 
 
 # Face Recognition Authentication System
