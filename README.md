@@ -2,8 +2,9 @@
 
 ![Kolo Authentication Logo](https://i.imgur.com/rTc41Iu.png)
 # Kol-auth-server
-A 3rd party app for facial verifcation
+A 3rd party app for facial verifcation Click the Image Below to watch
 
+[![Video Title](https://i.imgur.com/ExHJe2E.png)](https://drive.google.com/file/d/your-file-id/view)
 
 # Face Recognition Authentication System
 
